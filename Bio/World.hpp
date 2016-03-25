@@ -21,7 +21,7 @@ public:
     
     void Update() {
         for(ObjectsType::iterator it = mObjects.begin(); it!= mObjects.end(); ++it) {
-            it->Update(mObjects);
+            (*it)->Update(mObjects);
         }
     }
     

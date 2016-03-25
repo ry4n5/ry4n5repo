@@ -27,15 +27,22 @@ public:
             AssessObject(**it);
         }
         MakeDecision();
+        
+        std::vector<float> target_outputs;
+        target_outputs.push_back(1.f); // replace with x direction of nearest food
+        target_outputs.push_back(1.f); // replace with y direction of nearest food
+        mNeuralNetwork.PropagateBackwards(target_outputs, 0.5f, 0.1f); // N = 0.5, M=0.1, figure out what these are
     }
     
     void AssessObject(Object& rObject) {
-        std::vector<float> 
-        mNeuralNetwork.SetInput(0, rObject.Type());
-        mNeuralNetwork.SetInput(1, rObject.Position().X());
-        mNeuralNetwork.SetInput(2, rObject.Position().Y());
-        mNeuralNetwork.Run();
+        std::vector<float> inputs;
+        inputs.push_back((float)rObject.Type());
+        inputs.push_back(rObject.Position().X());
+        inputs.push_back(rObject.Position().Y());
+        mNeuralNetwork.FeedForward(inputs);
     }
+    
+    void MakeDecision() { }
     
 private:
     void SetupNN () {

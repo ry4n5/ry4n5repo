@@ -16,5 +16,6 @@ int main(int argc, const char * argv[]) {
     
     World world;
     
+    world.Update();
     return 0;
 }
