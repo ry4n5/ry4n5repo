@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6CDBC18E1CA422290082D5E9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CDBC18D1CA422290082D5E9 /* main.cpp */; };
+		6CDBC1961CA422850082D5E9 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CDBC1941CA422850082D5E9 /* World.cpp */; };
+		6CDBC1991CA422E80082D5E9 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CDBC1971CA422E80082D5E9 /* Object.cpp */; };
+		6CDBC19C1CA423D90082D5E9 /* Organism.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CDBC19A1CA423D90082D5E9 /* Organism.cpp */; };
+		6CDBC1A31CA4512E0082D5E9 /* NeuralNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CDBC1A11CA4512E0082D5E9 /* NeuralNetwork.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,16 @@
 /* Begin PBXFileReference section */
 		6CDBC18A1CA422290082D5E9 /* Bio */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Bio; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CDBC18D1CA422290082D5E9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6CDBC1941CA422850082D5E9 /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
+		6CDBC1951CA422850082D5E9 /* World.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = World.hpp; sourceTree = "<group>"; };
+		6CDBC1971CA422E80082D5E9 /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
+		6CDBC1981CA422E80082D5E9 /* Object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Object.hpp; sourceTree = "<group>"; };
+		6CDBC19A1CA423D90082D5E9 /* Organism.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Organism.cpp; sourceTree = "<group>"; };
+		6CDBC19B1CA423D90082D5E9 /* Organism.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Organism.hpp; sourceTree = "<group>"; };
+		6CDBC19D1CA425310082D5E9 /* shapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shapes.h; sourceTree = "<group>"; };
+		6CDBC1A11CA4512E0082D5E9 /* NeuralNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NeuralNetwork.cpp; sourceTree = "<group>"; };
+		6CDBC1A21CA4512E0082D5E9 /* NeuralNetwork.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NeuralNetwork.hpp; sourceTree = "<group>"; };
+		6CDBC1A41CA4A1E60082D5E9 /* atype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atype.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,16 @@
 			isa = PBXGroup;
 			children = (
 				6CDBC18D1CA422290082D5E9 /* main.cpp */,
+				6CDBC1A11CA4512E0082D5E9 /* NeuralNetwork.cpp */,
+				6CDBC1A21CA4512E0082D5E9 /* NeuralNetwork.hpp */,
+				6CDBC19A1CA423D90082D5E9 /* Organism.cpp */,
+				6CDBC19B1CA423D90082D5E9 /* Organism.hpp */,
+				6CDBC1941CA422850082D5E9 /* World.cpp */,
+				6CDBC1951CA422850082D5E9 /* World.hpp */,
+				6CDBC1971CA422E80082D5E9 /* Object.cpp */,
+				6CDBC1981CA422E80082D5E9 /* Object.hpp */,
+				6CDBC19D1CA425310082D5E9 /* shapes.h */,
+				6CDBC1A41CA4A1E60082D5E9 /* atype.h */,
 			);
 			path = Bio;
 			sourceTree = "<group>";
@@ -118,7 +142,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CDBC1961CA422850082D5E9 /* World.cpp in Sources */,
+				6CDBC19C1CA423D90082D5E9 /* Organism.cpp in Sources */,
 				6CDBC18E1CA422290082D5E9 /* main.cpp in Sources */,
+				6CDBC1991CA422E80082D5E9 /* Object.cpp in Sources */,
+				6CDBC1A31CA4512E0082D5E9 /* NeuralNetwork.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
